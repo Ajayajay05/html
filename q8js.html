@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 onclick="changeText(this)">Click on this text!</h1>
+
+<script>
+function changeText(id) {
+  id.innerHTML = "Welcome!";
+}
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Place your Mouse here"
+}
+</script>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:aqua;width:150px;height:10px;padding:40px;">
+Mouse Over Me</div>
+</body>
+</html>
