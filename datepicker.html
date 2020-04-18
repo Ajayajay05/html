@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Datepicker</title>
+    <!--add here jquery Date UI with CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"/></script>
+    <link rel="stylesheet" ref="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+     <!--end-->
+       <!--here define css-->
+        <style type="text/css">
+           #width {
+            max-width: 600px;
+            margin: 0 auto;
+            color:black;
+          }
+          table{
+                 background-color: white;
+                 color: green;
+                 width: 232px;
+               }
+            .ui-datepicker-next.ui-corner-all{float: right;}
+            .ui-datepicker-title{ background: none repeat scroll 0 0 skyblue;
+            text-align: center;}
+        </style>
+         <script> 
+           jQuery(document).ready(function() {
+             $('#datepick').datepicker({
+                   format: "dd/mm/yyyy",
+                   clearBtn: true,
+                   minDate: 0,
+                   maxDate: "+1M +30D",
+                   WeekDisabled: "0,6"
+               });
+           });
+        </script>
+       </head>
+ <body>
+          
+        <div id="width">
+          <h2>Fix the appointment</h2>  
+          Date:<input id="datepick" type="text" placeholder="Enter Date">
+
+        </div>
+    
+ </body>
+</html>
