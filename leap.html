@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+		JavaScript to check leap year 
+	</title> 
+	<style>
+		body{
+			background-color: aqua;
+		}
+	</style>
+</head> 
+
+<body> 
+	<br><br><br>
+	<br><br><br>
+	<br><br><br>
+	<br><br><br>
+	<br><br><br>
+	<br><br><br>
+	Input Year: <input type="text" id = "year"/> 	
+	<input type="button" id="button" onClick="isLeapYear()"	value="Check Leap Year" style="align-content: center;"> 	
+	<p id="ABC"></p> 	
+	<script> 
+		function isLeapYear() { 
+			var year= document.getElementById("year").value; 			
+			document.getElementById("ABC").innerHTML = (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0); 
+		} 
+	</script> 
+</body> 
+
+</html>					 
